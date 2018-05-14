@@ -31,3 +31,11 @@ theme_color: orange
 
 # Build settings
 markdown: kramdown
+
+mini_magick:
+    thumbnail: # Preset name
+        source: assets/img/original # source directory - change this to whatever you want
+        destination: assets/img/new # generated destination directory
+        resize: "150x150" # standard imagemagick options - you can chain multiple commands
+        gravity: "left"
+        extent: "300x300"
